@@ -8,50 +8,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#F4F1EA}
-a{color:#1B1F24}
-a:hover{color:#0F5C5A}
-html{scroll-behavior:smooth}
-@media (max-width: 800px){
-  [style*="grid-template-columns"]{grid-template-columns:1fr !important;gap:28px !important}
-  [style*="justify-content: space-between"]{flex-direction:column !important;align-items:flex-start !important;gap:8px !important}
-  [style*="justify-content: space-between"] > div[style*="display: flex"]{flex-wrap:wrap}
-  svg[width="300"]{display:none}
-  h1{font-size:40px !important}
-  h2{font-size:32px !important}
-  [style*="padding: 64px"]{padding:32px !important}
-  [style*="text-align: right"]{text-align:left !important}
-  [style*="display: flex; gap: 16px"]{flex-wrap:wrap}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="width: 100%; box-sizing: border-box; background: #F4F1EA; color: #1B1F24; font-family: 'Hanken Grotesk', sans-serif; font-size: 17px; line-height: 1.6;">
+<div class="page">
 
   <!-- NAV -->
-  <div style="max-width: 1080px; margin: 0 auto; padding: 24px 40px 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;">
-    <div style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600;">Matthew Richardson</div>
-    <div style="display: flex; gap: 4px;">
-      <a href="#work" style="padding: 12px 12px; font-size: 15px; text-decoration: none; font-weight: 500;">Work</a>
-      <a href="#approach" style="padding: 12px 12px; font-size: 15px; text-decoration: none; font-weight: 500;">How I work</a>
-      <a href="#outside" style="padding: 12px 12px; font-size: 15px; text-decoration: none; font-weight: 500;">About</a>
-      <a href="#contact" style="padding: 12px 12px; font-size: 15px; text-decoration: none; font-weight: 500;">Contact</a>
+  <div class="container nav">
+    <div class="nav-brand">Matthew Richardson</div>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">How I work</a>
+      <a href="#outside">About</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 
   <!-- HERO -->
-  <div style="max-width: 1080px; margin: 0 auto; padding: 80px 40px 72px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 40px;">
-    <div style="flex-grow: 1; max-width: 700px;">
-      <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #0F5C5A;">B2B technology · Analyst relations</div>
-      <h1 style="margin: 20px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 64px; line-height: 1.06; letter-spacing: -0.02em;">Influencing the influencers.</h1>
-      <p style="margin: 28px 0 0; max-width: 640px; font-size: 20px; line-height: 1.55; color: #3A3F45;">I’m a Bostonian now based in Salt Lake City. I’ve spent the last four years in the B2B tech space across cybersecurity, telecom, cloud, and managed services. For me, analyst relations isn’t about chasing rankings on a grid; it’s about building trust with the people who shape the market.</p>
-      <div style="margin-top: 36px; display: flex; gap: 16px;">
-        <a href="#work" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; background: #0F5C5A; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 4px;">See selected work</a>
-        <a href="#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border: 1px solid #1B1F24; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 4px;">Get in touch</a>
+  <div class="container hero">
+    <div class="hero-text">
+      <div class="eyebrow">B2B technology · Analyst relations</div>
+      <h1 class="h1">Influencing the influencers.</h1>
+      <p class="hero-lead">I’m a Bostonian now based in Salt Lake City. I’ve spent the last four years in the B2B tech space across cybersecurity, telecom, cloud, and managed services. For me, analyst relations isn’t about chasing rankings on a grid; it’s about building trust with the people who shape the market.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See selected work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
       </div>
     </div>
-    <svg aria-hidden="true" viewBox="0 0 320 320" width="300" height="300" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+    <svg class="hero-graphic" aria-hidden="true" viewBox="0 0 320 320" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
       <path d="M40 180 C40 90 130 40 210 70 C290 100 300 200 240 260 C180 320 60 280 40 180 Z" fill="none" stroke="#0F5C5A" stroke-width="1.5" opacity="0.35"></path>
       <path d="M80 180 C80 120 140 85 200 105 C255 125 262 195 220 235 C175 278 95 250 80 180 Z" fill="none" stroke="#0F5C5A" stroke-width="1.5" opacity="0.5"></path>
       <path d="M120 180 C120 150 155 130 190 145 C222 160 225 195 200 215 C170 240 128 222 120 180 Z" fill="none" stroke="#0F5C5A" stroke-width="1.5" opacity="0.7"></path>
@@ -60,174 +44,174 @@ html{scroll-behavior:smooth}
   </div>
 
   <!-- WORK -->
-  <div id="work" style="max-width: 1080px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
-    <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #0F5C5A;">Selected work</div>
-    <h2 style="margin: 12px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em;">Four programs, four different starting points.</h2>
-    <p style="margin: 20px 0 0; max-width: 680px; color: #3A3F45;">Inclusion in any analyst research is the firm's independent decision. My job is making sure analysts have accurate, current, well-evidenced information about the companies I represent.</p>
+  <div id="work" class="container section">
+    <div class="eyebrow">Selected work</div>
+    <h2 class="h2">Four programs, four different starting points.</h2>
+    <p class="lead">Inclusion in any analyst research is the firm's independent decision. My job is making sure analysts have accurate, current, well-evidenced information about the companies I represent.</p>
 
     <!-- Nucleus -->
-    <div style="margin-top: 56px; border-top: 1px solid #1B1F24; padding-top: 32px; display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 48px;">
+    <div class="case">
       <div>
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.15;">Nucleus Security</div>
-        <div style="margin-top: 8px; font-size: 15px; color: #4A4F55;">Vulnerability management<br>Sole owner of the AR program</div>
+        <div class="case-name">Nucleus Security</div>
+        <div class="case-tags">Vulnerability management<br>Sole owner of the AR program</div>
       </div>
-      <div style="display: grid; gap: 22px;">
+      <div class="case-fields">
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Situation</div>
-          <div style="margin-top: 4px;">A high-growth cybersecurity company with an early-stage AR function that needed to become a proactive, strategic program.</div>
+          <div class="field-label">Situation</div>
+          <div class="field-value">A high-growth cybersecurity company with an early-stage AR function that needed to become a proactive, strategic program.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What I did</div>
-          <div style="margin-top: 4px;">Built the engagement strategy across Gartner, Forrester, IDC, GigaOm, ESG, and Frost &amp; Sullivan, coordinating briefings, inquiries, report submissions, and executive prep. Worked closely with leadership and product marketing to sharpen positioning using analyst feedback.</div>
+          <div class="field-label">What I did</div>
+          <div class="field-value">Built the engagement strategy across Gartner, Forrester, IDC, GigaOm, ESG, and Frost &amp; Sullivan, coordinating briefings, inquiries, report submissions, and executive prep. Worked closely with leadership and product marketing to sharpen positioning using analyst feedback.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What it produced</div>
-          <div style="margin-top: 4px;">50+ analyst engagements annually, creating consistent two-way dialogue, and placement in 10+ analyst reports across six firms.</div>
+          <div class="field-label">What it produced</div>
+          <div class="field-value">50+ analyst engagements annually, creating consistent two-way dialogue, and placement in 10+ analyst reports across six firms.</div>
         </div>
       </div>
     </div>
 
     <!-- CDW -->
-    <div style="margin-top: 56px; border-top: 1px solid #1B1F24; padding-top: 32px; display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 48px;">
+    <div class="case">
       <div>
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.15;">CDW</div>
-        <div style="margin-top: 8px; font-size: 15px; color: #4A4F55;">$20B+ IT solutions provider<br>3.5-year engagement strategy</div>
+        <div class="case-name">CDW</div>
+        <div class="case-tags">$20B+ IT solutions provider<br>3.5-year engagement strategy</div>
       </div>
-      <div style="display: grid; gap: 22px;">
+      <div class="case-fields">
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Situation</div>
-          <div style="margin-top: 4px;">A large enterprise technology provider working to reshape how analysts perceive it in cloud and managed services.</div>
+          <div class="field-label">Situation</div>
+          <div class="field-value">A large enterprise technology provider working to reshape how analysts perceive it in cloud and managed services.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What I did</div>
-          <div style="margin-top: 4px;">Helped develop and iterate a multi-year strategy targeting the analysts who cover cloud infrastructure and managed services. Managed briefing logistics, executive preparation, and follow-up.</div>
+          <div class="field-label">What I did</div>
+          <div class="field-value">Helped develop and iterate a multi-year strategy targeting the analysts who cover cloud infrastructure and managed services. Managed briefing logistics, executive preparation, and follow-up.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What it produced</div>
-          <div style="margin-top: 4px;">65+ engagements across 35 analysts and 8 firms, and a contribution to CDW's first-ever Honorable Mention in the Gartner Magic Quadrant for Public Cloud IT Transformation Services.</div>
+          <div class="field-label">What it produced</div>
+          <div class="field-value">65+ engagements across 35 analysts and 8 firms, and a contribution to CDW's first-ever Honorable Mention in the Gartner Magic Quadrant for Public Cloud IT Transformation Services.</div>
         </div>
       </div>
     </div>
 
     <!-- Lookout -->
-    <div style="margin-top: 56px; border-top: 1px solid #1B1F24; padding-top: 32px; display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 48px;">
+    <div class="case">
       <div>
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.15;">Lookout</div>
-        <div style="margin-top: 8px; font-size: 15px; color: #4A4F55;">Mobile and cloud security<br>1.5-year program</div>
+        <div class="case-name">Lookout</div>
+        <div class="case-tags">Mobile and cloud security<br>1.5-year program</div>
       </div>
-      <div style="display: grid; gap: 22px;">
+      <div class="case-fields">
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Situation</div>
-          <div style="margin-top: 4px;">A leading mobile security vendor competing in an increasingly crowded SSE and mobile threat defense market.</div>
+          <div class="field-label">Situation</div>
+          <div class="field-value">A leading mobile security vendor competing in an increasingly crowded SSE and mobile threat defense market.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What I did</div>
-          <div style="margin-top: 4px;">Developed briefing materials and coordinated executive-level engagements to clearly articulate Lookout's differentiation to tier-one and emerging research firms.</div>
+          <div class="field-label">What I did</div>
+          <div class="field-value">Developed briefing materials and coordinated executive-level engagements to clearly articulate Lookout's differentiation to tier-one and emerging research firms.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What it produced</div>
-          <div style="margin-top: 4px;">30+ analyst engagements a year across Gartner, Forrester, IDC, GigaOm, and Frost &amp; Sullivan, and three report placements: a GigaOm Radar, a Frost &amp; Sullivan report, and an IDC MarketScape.</div>
+          <div class="field-label">What it produced</div>
+          <div class="field-value">30+ analyst engagements a year across Gartner, Forrester, IDC, GigaOm, and Frost &amp; Sullivan, and three report placements: a GigaOm Radar, a Frost &amp; Sullivan report, and an IDC MarketScape.</div>
         </div>
       </div>
     </div>
 
     <!-- Progress -->
-    <div style="margin-top: 56px; border-top: 1px solid #1B1F24; padding-top: 32px; display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 48px;">
+    <div class="case">
       <div>
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 30px; font-weight: 600; line-height: 1.15;">Progress Software</div>
-        <div style="margin-top: 8px; font-size: 15px; color: #4A4F55;">Enterprise software<br>One-year contract</div>
+        <div class="case-name">Progress Software</div>
+        <div class="case-tags">Enterprise software<br>One-year contract</div>
       </div>
-      <div style="display: grid; gap: 22px;">
+      <div class="case-fields">
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Situation</div>
-          <div style="margin-top: 4px;">Progress had acquired Nuclia and was relaunching it as Progress Agentic RAG, part of its broader data platform. The analysts covering data, AI, and databases needed to understand the product and where it fit.</div>
+          <div class="field-label">Situation</div>
+          <div class="field-value">Progress had acquired Nuclia and was relaunching it as Progress Agentic RAG, part of its broader data platform. The analysts covering data, AI, and databases needed to understand the product and where it fit.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What I did</div>
-          <div style="margin-top: 4px;">Partnered with Progress's analyst relations team to deliver the Agentic RAG program. Supported briefing and demo planning, spokesperson preparation, and follow-up, and helped build a regular cadence with the analysts most engaged with the story.</div>
+          <div class="field-label">What I did</div>
+          <div class="field-value">Partnered with Progress's analyst relations team to deliver the Agentic RAG program. Supported briefing and demo planning, spokesperson preparation, and follow-up, and helped build a regular cadence with the analysts most engaged with the story.</div>
         </div>
         <div>
-          <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">What it produced</div>
-          <div style="margin-top: 4px;">30+ engagements across 15+ analysts at 6 firms, including new relationships at Forrester, Gartner, and S&amp;P Global (451). Two report placements followed: the MarketsandMarkets RAG Market report and The Forrester Wave&trade;: Digital Experience Platforms, Q4 2025 &mdash; Progress's first invitation to that Wave.</div>
+          <div class="field-label">What it produced</div>
+          <div class="field-value">30+ engagements across 15+ analysts at 6 firms, including new relationships at Forrester, Gartner, and S&amp;P Global (451). Two report placements followed: the MarketsandMarkets RAG Market report and The Forrester Wave&trade;: Digital Experience Platforms, Q4 2025 &mdash; Progress's first invitation to that Wave.</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- HOW I WORK -->
-  <div id="approach" style="max-width: 1080px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
-    <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #0F5C5A;">How I work</div>
-    <h2 style="margin: 12px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em; max-width: 800px;">Analyst relations is about influencing the influencers.</h2>
-    <p style="margin: 20px 0 0; max-width: 680px; color: #3A3F45;">My goal is simple: build meaningful, lasting relationships with the analysts who cover the B2B markets I work in. Four ideas shape how I run a program.</p>
-    <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 48px;">
-      <div style="border-top: 1px solid #1B1F24; padding-top: 20px;">
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600;">Relationships come before reports</div>
-        <div style="margin-top: 8px; font-size: 16px; color: #3A3F45;">Analysts form views on a company all year, from many sources, long before any briefing or evaluation. So I aim for steady, two-way dialogue rather than campaigns timed to a research cycle.</div>
+  <div id="approach" class="container section">
+    <div class="eyebrow">How I work</div>
+    <h2 class="h2" style="max-width: 800px;">Analyst relations is about influencing the influencers.</h2>
+    <p class="lead">My goal is simple: build meaningful, lasting relationships with the analysts who cover the B2B markets I work in. Four ideas shape how I run a program.</p>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="approach-title">Relationships come before reports</div>
+        <div class="approach-desc">Analysts form views on a company all year, from many sources, long before any briefing or evaluation. So I aim for steady, two-way dialogue rather than campaigns timed to a research cycle.</div>
       </div>
-      <div style="border-top: 1px solid #1B1F24; padding-top: 20px;">
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600;">Ask before you announce</div>
-        <div style="margin-top: 8px; font-size: 16px; color: #3A3F45;">The best analyst conversations happen while strategy and product direction are still open. I bring analysts in for perspective on where the market is going instead of unveiling a finished story and hoping for applause.</div>
+      <div class="approach-card">
+        <div class="approach-title">Ask before you announce</div>
+        <div class="approach-desc">The best analyst conversations happen while strategy and product direction are still open. I bring analysts in for perspective on where the market is going instead of unveiling a finished story and hoping for applause.</div>
       </div>
-      <div style="border-top: 1px solid #1B1F24; padding-top: 20px;">
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600;">Right analysts, not all analysts</div>
-        <div style="margin-top: 8px; font-size: 16px; color: #3A3F45;">Analysts play different roles, and not every one moves buying decisions in your category. I rank them by role and relevance to buyers so time goes where it counts.</div>
+      <div class="approach-card">
+        <div class="approach-title">Right analysts, not all analysts</div>
+        <div class="approach-desc">Analysts play different roles, and not every one moves buying decisions in your category. I rank them by role and relevance to buyers so time goes where it counts.</div>
       </div>
-      <div style="border-top: 1px solid #1B1F24; padding-top: 20px;">
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 22px; font-weight: 600;">Executive backing, insight flowing inward</div>
-        <div style="margin-top: 8px; font-size: 16px; color: #3A3F45;">A program works when leadership shows up for it. And the value comes back into the company as messaging, competitive intelligence, and guidance for product and sales.</div>
+      <div class="approach-card">
+        <div class="approach-title">Executive backing, insight flowing inward</div>
+        <div class="approach-desc">A program works when leadership shows up for it. And the value comes back into the company as messaging, competitive intelligence, and guidance for product and sales.</div>
       </div>
     </div>
   </div>
 
   <!-- COVERAGE -->
-  <div style="max-width: 1080px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
-    <div style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; border-top: 1px solid #1B1F24; padding-top: 32px;">
+  <div class="container section">
+    <div class="coverage-grid rule-top">
       <div>
-        <div style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Programs supported</div>
-        <div style="margin-top: 10px; font-family: 'Fraunces', Georgia, serif; font-size: 22px; line-height: 1.5;">CDW · AHEAD · Lookout · Nucleus Security · Progress Software · Tarana Wireless · Wi-Fi Alliance</div>
-        <div style="margin-top: 10px; font-size: 15px; color: #4A4F55;">Four years running AR programs agency-side, across concurrent client accounts in cybersecurity, data infrastructure, and managed services. Quick to learn any new B2B market.</div>
+        <div class="coverage-label">Programs supported</div>
+        <div class="coverage-value">CDW · AHEAD · Lookout · Nucleus Security · Progress Software · Tarana Wireless · Wi-Fi Alliance</div>
+        <div class="coverage-desc">Four years running AR programs agency-side, across concurrent client accounts in cybersecurity, data infrastructure, and managed services. Quick to learn any new B2B market.</div>
       </div>
     </div>
   </div>
 
   <!-- ABOUT -->
-  <div id="outside" style="max-width: 1080px; margin: 0 auto; padding: 120px 40px 0; box-sizing: border-box;">
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px;">
-      <div style="flex-grow: 1; max-width: 640px;">
-        <div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: #0F5C5A;">About</div>
-        <h2 style="margin: 12px 0 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em;">Boston roots, living in Salt Lake.</h2>
-        <p style="margin: 20px 0 0; color: #3A3F45;">I grew up in Boston and made the move to Salt Lake City two years ago. When I’m not working, I’m usually out in the mountains, skiing, or catching live music.</p>
+  <div id="outside" class="container section">
+    <div class="about-top">
+      <div class="about-text">
+        <div class="eyebrow">About</div>
+        <h2 class="h2">Boston roots, living in Salt Lake.</h2>
+        <p class="lead" style="max-width: none;">I grew up in Boston and made the move to Salt Lake City two years ago. When I’m not working, I’m usually out in the mountains, skiing, or catching live music.</p>
       </div>
-      <img src="images/matthew-summit.jpg" alt="Matthew Richardson standing on a rocky mountain summit under a clear blue sky" loading="lazy" style="width: 260px; height: 346px; object-fit: cover; border-radius: 4px; flex-shrink: 0;">
+      <img class="about-photo" src="images/matthew-summit.jpg" alt="Matthew Richardson standing on a rocky mountain summit under a clear blue sky" loading="lazy">
     </div>
 
     <!-- Route strip -->
-    <div style="margin-top: 40px; display: grid; grid-template-columns: 220px minmax(0, 1fr) 220px; gap: 24px; align-items: center; border-top: 1px solid #1B1F24; border-bottom: 1px solid #1B1F24; padding: 24px 0;">
+    <div class="route-strip">
       <div>
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 26px; font-weight: 600;">Boston, MA</div>
-        <div style="margin-top: 4px; font-size: 14px; letter-spacing: 0.08em; color: #4A4F55;">42.36° N, 71.06° W</div>
+        <div class="route-city">Boston, MA</div>
+        <div class="route-coords">42.36° N, 71.06° W</div>
       </div>
       <svg aria-hidden="true" viewBox="0 0 400 24" width="100%" height="24" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="6" cy="12" r="5" fill="#0F5C5A"></circle>
         <line x1="14" y1="12" x2="386" y2="12" stroke="#0F5C5A" stroke-width="1.5" stroke-dasharray="4 6"></line>
         <circle cx="394" cy="12" r="5" fill="#0F5C5A"></circle>
       </svg>
-      <div style="text-align: right;">
-        <div style="font-family: 'Fraunces', Georgia, serif; font-size: 26px; font-weight: 600;">Salt Lake City, UT</div>
-        <div style="margin-top: 4px; font-size: 14px; letter-spacing: 0.08em; color: #4A4F55;">40.76° N, 111.89° W</div>
+      <div class="route-end--right">
+        <div class="route-city">Salt Lake City, UT</div>
+        <div class="route-coords">40.76° N, 111.89° W</div>
       </div>
     </div>
 
-    <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px;">
+    <div class="hobbies-grid">
 
       <!-- Hiking -->
       <div>
         <svg aria-hidden="true" viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 40 L18 14 L26 28 L32 20 L44 40 Z" fill="none" stroke="#0F5C5A" stroke-width="2" stroke-linejoin="round"></path>
         </svg>
-        <div style="margin-top: 12px; font-family: 'Fraunces', Georgia, serif; font-size: 28px; font-weight: 600;">Hiking</div>
-        <div style="margin-top: 4px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Recent summits</div>
-        <div style="margin-top: 10px; font-family: 'Fraunces', Georgia, serif; font-size: 20px; line-height: 1.7;">Middle Teton<br>Mount Timpanogos<br>Broads Fork Twin Peaks</div>
+        <div class="hobby-title">Hiking</div>
+        <div class="hobby-label">Recent summits</div>
+        <div class="hobby-list">Middle Teton<br>Mount Timpanogos<br>Broads Fork Twin Peaks</div>
       </div>
 
       <!-- Skiing -->
@@ -235,11 +219,11 @@ html{scroll-behavior:smooth}
         <svg aria-hidden="true" viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 8 C30 12 10 26 24 30 C34 33 38 38 42 42" fill="none" stroke="#0F5C5A" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round"></path>
         </svg>
-        <div style="margin-top: 12px; font-family: 'Fraunces', Georgia, serif; font-size: 28px; font-weight: 600;">Skiing</div>
-        <div style="margin-top: 14px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">Utah big three</div>
-        <div style="margin-top: 4px; font-family: 'Fraunces', Georgia, serif; font-size: 20px; line-height: 1.5;">Alta · Snowbird · Snowbasin</div>
-        <div style="margin-top: 14px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: #4A4F55;">East coast big three</div>
-        <div style="margin-top: 4px; font-family: 'Fraunces', Georgia, serif; font-size: 20px; line-height: 1.5;">Loon · Jay Peak · Mad River Glen</div>
+        <div class="hobby-title">Skiing</div>
+        <div class="hobby-label" style="margin-top: 14px;">Utah big three</div>
+        <div class="hobby-list" style="margin-top: 4px; font-size: 20px; line-height: 1.5;">Alta · Snowbird · Snowbasin</div>
+        <div class="hobby-label" style="margin-top: 14px;">East coast big three</div>
+        <div class="hobby-list" style="margin-top: 4px; font-size: 20px; line-height: 1.5;">Loon · Jay Peak · Mad River Glen</div>
       </div>
 
       <!-- Concerts -->
@@ -250,21 +234,21 @@ html{scroll-behavior:smooth}
           <circle cx="24" cy="24" r="7" fill="none" stroke="#0F5C5A" stroke-width="1.5" opacity="0.6"></circle>
           <circle cx="24" cy="24" r="2" fill="#0F5C5A"></circle>
         </svg>
-        <div style="margin-top: 12px; font-family: 'Fraunces', Georgia, serif; font-size: 28px; font-weight: 600;">Live music</div>
-        <div style="margin-top: 10px; font-family: 'Fraunces', Georgia, serif; font-size: 20px; line-height: 1.7;">Dead &amp; Company<br>Billy Strings<br>Classic Rock<br>Poster and Vinyl Collector</div>
+        <div class="hobby-title">Live music</div>
+        <div class="hobby-list">Dead &amp; Company<br>Billy Strings<br>Classic Rock<br>Poster and Vinyl Collector</div>
       </div>
 
     </div>
   </div>
 
   <!-- CONTACT -->
-  <div id="contact" style="max-width: 1080px; margin: 0 auto; padding: 120px 40px 80px; box-sizing: border-box;">
-    <div style="background: #1B1F24; color: #F4F1EA; padding: 64px; border-radius: 4px;">
-      <h2 style="margin: 0; font-family: 'Fraunces', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em; max-width: 720px;">If you're building or rebuilding an AR function, let's talk.</h2>
-      <p style="margin: 20px 0 0; max-width: 620px; color: #D5D2C9;">Four years running AR programs agency-side: 120+ analyst engagements a year across Gartner, Forrester, IDC, 451 Research, Omdia, and Frost &amp; Sullivan, contributing to placements in Magic Quadrants, Forrester Waves, IDC MarketScapes, GigaOm Radars, and Frost &amp; Sullivan Radars. Based in Salt Lake City, looking for an in-house AR role, and happy to walk through any of these programs in more detail.</p>
-      <div style="margin-top: 32px; display: flex; gap: 16px;">
-        <a href="mailto:Matthewsrichardson01@gmail.com" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; background: #F4F1EA; color: #1B1F24; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 4px;">Email Matthew</a>
-        <a href="https://www.linkedin.com/in/matthew-richardson-2a3684190/" style="display: inline-flex; align-items: center; height: 48px; padding: 0 26px; border: 1px solid #F4F1EA; color: #F4F1EA; text-decoration: none; font-weight: 600; font-size: 16px; border-radius: 4px;">LinkedIn</a>
+  <div id="contact" class="container contact-section">
+    <div class="contact-box">
+      <h2 class="h2 contact-h2" style="margin-top: 0;">If you're building or rebuilding an AR function, let's talk.</h2>
+      <p class="contact-lead">Four years running AR programs agency-side: 120+ analyst engagements a year across Gartner, Forrester, IDC, 451 Research, Omdia, and Frost &amp; Sullivan, contributing to placements in Magic Quadrants, Forrester Waves, IDC MarketScapes, GigaOm Radars, and Frost &amp; Sullivan Radars. Based in Salt Lake City, looking for an in-house AR role, and happy to walk through any of these programs in more detail.</p>
+      <div class="contact-actions">
+        <a href="mailto:Matthewsrichardson01@gmail.com" class="btn btn-light">Email Matthew</a>
+        <a href="https://www.linkedin.com/in/matthew-richardson-2a3684190/" class="btn btn-outline-light">LinkedIn</a>
       </div>
     </div>
   </div>
